@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- Import thư viện JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="jsLALU.js"></script>
+    <script src="Link.js"></script>
+    <title>iORA - Online Shopping</title>
+</head>
+
+<body>
+
+    <body ng-app="myApp">
+        <div class="header">
+            <div class="fixed-top bg-white" id="fix-botton">
+                <div class="d-flex justify-content-around bd-highlight menu unselectable">
+                    <div class="p-2 bd-highlight">
+                        <i class="bi bi-geo-alt"></i>
+                        <a style="text-decoration:none;" href="#!findStore"> Find a store</a>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <a class="" href="#!" style="font-size: 40px; font-family: 'Times New Roman', Times, serif; text-decoration: none;">iORA</a>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <a style="text-decoration:none;" href="#!favourite">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        &nbsp;&nbsp;
+                        <a style="text-decoration:none;" href="#!shoppingCard">
+                            <i class="bi bi-cart"></i>
+                        </a>
+                        &nbsp;&nbsp;
+                        <a style="text-decoration:none;" href="#!login">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        &nbsp;&nbsp;
+                        <a style="text-decoration:none;" href="">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">iORA</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!iora1">Home</a>
+                                    <a class="dropdown-item" href="#!iora7">NEW ARRIVALS</a>
+                                    <a class="dropdown-item" href="#!iora9">TOPS</a>
+                                    <a class="dropdown-item" href="#!iora5">BOTTOMS</a>
+                                    <a class="dropdown-item" href="#!iora8">SKIRTS</a>
+                                    <a class="dropdown-item" href="#!iora6">KNITS & SWEATERS</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LALU</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!lalu">Home</a>
+                                    <a class="dropdown-item" href="#!lalunewarri">NEW ARRIVALS</a>
+                                    <a class="dropdown-item" href="#!lalubottom">BOTTOMS</a>
+                                    <a class="dropdown-item" href="#!laluskirts">SKIRTS</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCESSORIES</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!Accessories">Home</a>
+                                    <a class="dropdown-item" href="#!bags1">BAGS</a>
+                                    <a class="dropdown-item" href="#!shoe1">SHOES</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration:none;color:yellowgreen;" href="#!onlineexclusive">ONLINE EXCLUSIVE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!sale" style="text-decoration:none; color:red">SALE</a></li>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BUNDLE DEAL</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!bundledeal1">2 FOR $29.90</a>
+                                    <a class="dropdown-item" href="#!bundledeal2">2 FOR $49.90</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#!iORA_Stories">iORA</a>
+                                    <a class="dropdown-item" href="#!lalu/stories">LALU</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="ng-view">
+            <div ng-view></div>
+        </div>
+        <!-- footer -->
+
+        <div>
+            <div class="commit">
+                <div><img style="width:20px" height="20px" src="image/return.png" alt=""> 30-day Retail Exchange</div>
+                <div><img style="width:20px" height="20px" src="image/box.png" alt=""> Click and Collect</div>
+                <div><img style="width:20px" height="20px" src="image/lock.png" alt=""> Secure Checkout</div>
+                <div><img style="width:20px" height="20px" src="image/offline.png" alt=""> Worldwide Shipping</div>
+            </div>
+            <div class="container" id="spcae_top">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p id="tittle"><b>Sign up for our Newsletter</b></p>
+                        <p>Be the first to know about our product launch and exclusive deals.</p>
+                        <p><input type="email" placeholder="Email Address *"><button class="btn-custom-light">Subscribe</button></p>
+                        <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><a class="text-dark" href="#!AboutUs"> ABOUT US </a></p>
+                        <p><a class="text-dark" href="#!ContactUs"> CONTACT US</a></p>
+                        <p><a class="text-dark" href="#!findStore"> STORES</a></p>
+                        <p><a class="text-dark" href="#!on-going promotions"> ON-GOING PROMOTIONS</a></p>
+                        <p><a class="text-dark" href="#!campaigns"> CAMPAIGNS </a></p>
+                        <p><a class="text-dark" href="#!careers"> CAREERS</a></p>
+                        <p><a class="text-dark" href="#!sizeguide"> SIZE GUIDE</a></p>
+                        <p><a class="text-dark" href="#!returns-exchange"> RETURNS & EXCHANGE</a></p>
+                        <p><a class="text-dark" href="#!methods-cost"> DELIVERY METHODS & COSTS</a></p>
+                    </div>
+                    <div>
+                        <p>
+                            Copyright © 2022 iORA SINGAPORE, all rights reserved.
+                            <br>
+                            <a href="#!terms" style="text-decoration:none; color:black">Terms of Service</a> |
+                            <a href="#!privacy" style="text-decoration:none; color:black">Privacy Policy</a> |
+                            <a href="#!cookies" style="text-decoration:none; color:black">Cookies Policy</a>
+                            <br>
+                            <img style="width: 260px;height: 28px;" src="image/payment-gateway-sg.jpg" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; font-size:30px;"><a href='#' title="Back to top">&#710;</a></div>
+
+        </div>
+        <script>
+        </script>
+        <div title="Về đầu trang" id="top-up">
+            <i class="fas fa-arrow-circle-up"></i></div>
+    </body>
+</body>
+
+</html>

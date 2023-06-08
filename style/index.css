@@ -1,0 +1,75 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#top-up {
+    font-size: 3rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    color: #004993;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        margin-bottom: 2%;
+    }
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
+}
+
+#top-up:hover {
+    color: #333
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#tittle {
+    font-size: larger;
+}
+
+.col-sm-4 p a:hover {
+    color: #6c757d!important;
+}
+
+.navbar .nav-link {
+    cursor: pointer;
+}
+
+.ng-view {
+    margin-top: 14%;
+}
+
+.disabled a {
+    cursor: pointer;
+    text-decoration: none;
+}
